@@ -522,11 +522,11 @@ skills-programming::after {
 }
 
 skills-programming:hover::after {
-    content: "Python | Java | C++ | Bash | CSS | HTML | LATEX | MATLAB";
+    content: "Python  |  Java  |  C++  |  Bash  |  CSS  |  HTML  |  LATEX  |  MATLAB";
 }
 
 skills-programming:hover {
-    background-color: #3A9AF4;
+    background-color: #05263B;
 }
 
 skills-platforms {
@@ -551,11 +551,11 @@ skills-platforms::after {
 
 skills-platforms:hover::after {
     font-size: 24px;
-    content: "Unity | VR/AR | LTSpice | OpenCV | TensorFlow | Solidworks | Fusion 360 | AutoCAD";
+    content: "Unity  |  XR  |  LTSpice  |  OpenCV  |  TensorFlow  |  Solidworks  |  Fusion 360  |  AutoCAD";
 }
 
 skills-platforms:hover {
-    background-color: #3A9AF4;
+    background-color: #05263B;
 }
 
 skills-hardware {
@@ -580,15 +580,15 @@ skills-hardware::after {
 
 skills-hardware:hover::after {
     font-size: 24px;
-    content: "Raspberry Pi | Arduino | Teeny | i2c | SPI | RS232 | UART";
+    content: "Raspberry Pi  |  Arduino |  Teensy  |  i2c  |  SPI |  RS232  |  UART";
 }
 
 skills-hardware:hover {
-    background-color: #3A9AF4;
+    background-color: #05263B;
 }
 
 .btn:hover {
-    background-color: #3A9AF4;
+    background-color: #05263B;
 }
 
 /*--------------------------------------------------------------
