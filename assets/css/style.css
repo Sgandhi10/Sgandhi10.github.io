@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .mobile-nav-toggle {
     position: fixed;
-    right: 10px;
+    left: 10px;
     top: 10px;
     z-index: 9998;
     border: 0;
@@ -513,20 +513,23 @@ skills-programming {
     border-radius: 5px;
 
     /* transition timing */
-    transition: all .5s
+    transition: all 1s
 }
 
 skills-programming::after {
-    font-size: 24px;
     content: "Programming";
+    transition: all 1s
 }
 
 skills-programming:hover::after {
+    font-size: 24px;
     content: "Python  |  Java  |  C++  |  Bash  |  CSS  |  HTML  |  LATEX  |  MATLAB";
+    transition: all 1s;
 }
 
 skills-programming:hover {
     background-color: #05263B;
+    transition: all 1s;
 }
 
 skills-platforms {
@@ -542,20 +545,23 @@ skills-platforms {
     border-radius: 5px;
 
     /* transition timing */
-    transition: all .5s
+    transition: all 1s
 }
 
 skills-platforms::after {
     content: "Platforms";
+    transition: all 1s;
 }
 
 skills-platforms:hover::after {
     font-size: 24px;
     content: "Unity  |  XR  |  LTSpice  |  OpenCV  |  TensorFlow  |  Solidworks  |  Fusion 360  |  AutoCAD";
+    transition: all 1s;
 }
 
 skills-platforms:hover {
     background-color: #05263B;
+    transition: all 1s;
 }
 
 skills-hardware {
@@ -571,24 +577,28 @@ skills-hardware {
     border-radius: 5px;
 
     /* transition timing */
-    transition: all .5s
+    transition: all 1s
 }
 
 skills-hardware::after {
     content: "Hardware & Interfaces";
+    transition: all 1s;
 }
 
 skills-hardware:hover::after {
     font-size: 24px;
     content: "Raspberry Pi  |  Arduino |  Teensy  |  i2c  |  SPI |  RS232  |  UART";
+    transition: all 1s;
 }
 
 skills-hardware:hover {
     background-color: #05263B;
+    transition: all 1s;
 }
 
 .btn:hover {
     background-color: #05263B;
+    transition: all 1s;
 }
 
 /*--------------------------------------------------------------
