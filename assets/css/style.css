@@ -670,7 +670,6 @@ skills-hardware:hover {
 }
 
 .portfolio #portfolio-flters {
-    padding: 0;
     margin: 0 auto 25px auto;
     list-style: none;
     text-align: center;
@@ -710,7 +709,7 @@ skills-hardware:hover {
 
 .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.90);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -768,13 +767,14 @@ skills-hardware:hover {
 .portfolio .portfolio-wrap .portfolio-info h4 {
     font-size: 20px;
     color: #45505b;
-    font-weight: 600;
+    font-weight: 650;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
     color: #45505b;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
+    font-weight: 550;
     padding: 0;
     margin: 0;
 }
