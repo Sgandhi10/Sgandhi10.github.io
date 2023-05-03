@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
     #main {
-        margin-left: 100px;
+        margin-left: 10px;
     }
 }
 
@@ -871,6 +871,8 @@ skills-hardware:hover {
 
 .portfolio-details .portfolio-description {
     padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .portfolio-details .portfolio-description h2 {
