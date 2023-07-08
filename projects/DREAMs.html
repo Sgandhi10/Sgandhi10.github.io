@@ -43,13 +43,10 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section class="portfolio-details" id="portfolio-details">
         <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-8">
+            <div class="row gy-4 justify-content-center align-items-center">
+                <div class="col-lg-6">
                     <div class="portfolio-details-slider swiper">
                         <div class="swiper-wrapper align-items-center">
-
                             <div class="swiper-slide">
                                 <img alt="" src="../assets/img/portfolio/DREAMs/IMG_3107.jpg">
                             </div>
@@ -76,23 +73,51 @@
                             <li><strong>Project date</strong>: September 2021 - May 2022</li>
                         </ul>
                     </div>
-                    <div class="portfolio-description">
+                    <div class="">
                         <h2>DREAMs</h2>
                         <p>
-                            <ul>
-                        <li>Wrote Python scripts to create PNG bitmaps for each layer, customize settings, and allow for full control of piezo inkjet heads in a Rize One legacy inkjet & FDM 3D printer
-                        </li>
-                        <li>Integrated a polymer that increases interlayer adhesion with FDM materials to increase structural strength of printed parts
-                        </li>
-                        <li>Designed a custom ink reservoir in SolidWorks to increase the printer’s compatibility with 3rd party polymers
-                        </li>
-                    </ul>
+                            Wrote python scripts to create PNG bitmaps for each layer, customize settings,and allow for
+                            full control of piezo inkjet heads in a Rize One legacy inkjet & FDM 3D printer. Integrated
+                            a polymer that increases interlayer adhesion with FDM materials to increase the structural
+                            strength of printed parts. Designed a custom ink reservoir in SolidWorks to increase the
+                            printer’s compatibility with 3rd party polymers.
                         </p>
                     </div>
                 </div>
 
             </div>
 
+        </div>
+        <div class="portfolio-description w-100">
+            <h3>Research Area</h3>
+            <p>
+                This project worked around an additive manufacturing device that integrates FDM and inkjet allowing
+                for complex integrated parts to be printed which otherwise would not be possible. One major
+                application for this technology is the use of the inkjet nozzles as a plasticizers to allow for
+                stronger adhesion between layers. Furthermore, this technology can be expanded to electronics with
+                the introduction of conductive inks that would allow for traces to be built into the part. This
+                enables PCBs to be printed directly into the part, reducing the need for assembly and increasing
+                the structural integrity of the part.
+            </p>
+            <h3>Challenges Faced</h3>
+            <p>
+                The first major challenge faced with this project involved the hardware hacking of the machine. Since
+                this machine was a legacy 3D printer, there was no documentation on the hardware or software. This
+                meant having to experiment with the proprietary file created by the slicer. After understanding the
+                methodology behind the file, I was able to create a python script that would allow me to create my own
+                instruction sets for the part.
+                <br><br>
+                The second challenge involved the integration of the actual ink with the system. This system was
+                heavily locked down with chips integrated onto all disposable parts. This meant in order to use our
+                inks, we needed to trick the system into thinking it was using the original ink. This was done by
+                bypassing the ink cartridge and directly filling the ink reservoir with our ink.
+                <br><br>
+                The final challenge was understanding the chemical properties of the materials we utilized as an ink.
+                When working with some inks, we realized the surface tension was too high causing the
+                piezoelectric ink heads to get jammed and not push any ink out. This was solved by looking using the
+                Wendell and Reynolds number to determine the surface tension of the ink and how it would behave in the
+                system.
+            </p>
         </div>
     </section><!-- End Portfolio Details Section -->
 
