@@ -43,13 +43,10 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section class="portfolio-details" id="portfolio-details">
         <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-8">
+            <div class="row gy-4 justify-content-center align-items-center">
+                <div class="col-lg-6">
                     <div class="portfolio-details-slider swiper">
                         <div class="swiper-wrapper align-items-center">
-
                             <div class="swiper-slide">
                                 <img alt="" src="../assets/img/portfolio/NLP/Ishana1.png">
                             </div>
@@ -76,23 +73,60 @@
                             <li><strong>Project date</strong>: September 2021 - Present</li>
                         </ul>
                     </div>
-                    <div class="portfolio-description">
+                    <div class="">
+                        <hr>
                         <h2>Natural Language Processing in Food Science</h2>
                         <p>
-                            <ul>
-                        <li>Analyzed word relations from 40,000+ abstracts and created scripts to fetch abstracts, clean
-                            data, and train models</li>
-                        <li>Worked with food science professors to detect unusual patterns in between sensory and
+                            Developed a model to analyze the relationship between sensory and chemical descriptions of
+                            food products using word2vec models and visualized the results using Orange, Tableau and
+                            Gephi. The model was able to detect unusual patterns in between sensory and chemical
+                            descriptions.
+                        </p>
+                        <p>
+                        <ul>
+                            <li>Analyzed word relations from 40,000+ abstracts and created scripts to fetch abstracts,
+                                clean
+                                data, and train models
+                            </li>
+                            <li>Worked with food science professors to detect unusual patterns in between sensory and
                                 chemical descriptions through Gensim word2vec models visualized in Orange, Tableau
-                            and Gephi</li>
+                                and Gephi
+                            </li>
 
-                    </ul>
+                        </ul>
                         </p>
                     </div>
                 </div>
 
             </div>
 
+        </div>
+        <div class="portfolio-description w-100">
+            <h3>Inspiration</h3>
+            <p>
+                This research area is based on another research paper that was published in nature called <a
+                    href="https://doi.org/10.1038/s41586-019-1335-8" target="_blank">"Unsupervised word embeddings
+                capture latent knowledge from materials science literature"</a>. The paper was about how word2vec
+                models can be used to analyze the relationship between chemical and physical properties of materials.
+            </p>
+            <h3>Our Approach</h3>
+            <p>
+                We decided to tak the approach utilized by this paper and modify it to work for our scenario. We
+                started by observing 4 different journals from which we scraped abstracts to build our dataset
+                (60k+ abstracts). This dataset is then cleaned and preprocessed to remove stop words, punctuation,
+                and other unnecessary characters. We then train our word2vec model on this dataset and use the
+                model to analyze the relationship between sensory and chemical descriptions of food products.
+                <br><br>
+                One important distinguishing factor between our approach and the approach used in the paper is that
+                our dataset is much smaller than the dataset used in the paper. This is because we are working with
+                a very specific domain (food science) and the number of abstracts available for this domain is
+                limited. To compensate for this, we utilized Google's word2vec to model to provide a
+                foundation for the model and trained our model on top of it. This allowed us to achieve similar results
+                to the paper.
+            </p>
+            <h3>Results</h3>
+            <p>Below is an example of some of the findings found from our analysis.</p>
+            <img src="../assets/img/portfolio/NLP/figure.png" class="img-fluid" alt="">
         </div>
     </section><!-- End Portfolio Details Section -->
 
