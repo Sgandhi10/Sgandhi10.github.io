@@ -43,14 +43,22 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section class="portfolio-details" id="portfolio-details">
         <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-8">
+            <div class="row gy-4 justify-content-center align-items-center">
+                <div class="col-lg-6">
                     <div class="portfolio-details-slider swiper">
                         <div class="swiper-wrapper align-items-center">
                             <div class="swiper-slide">
-                                <img alt="" src="../assets/img/portfolio/TexasInstruments.png">
+                                <img alt="" src="../assets/img/portfolio/TI/tesla-autopilot-side-repeater-camera.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt=""
+                                     src="../assets/img/portfolio/TI/257505_L_histoire_du_systeme_d_infodivertissement.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="" src="../assets/img/portfolio/TI/FMCA1350Z-12.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="" src="../assets/img/portfolio/TI/Adas.png">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -61,27 +69,75 @@
                     <div class="portfolio-info">
                         <h3>Internship information</h3>
                         <ul>
-                            <li><strong>Position</strong>: Incoming Validation Engineering Intern</li>
+                            <li><strong>Company</strong>: Texas Instruments</li>
+                            <li><strong>Position</strong>: Validation Engineering Intern</li>
                             <li><strong>Internship date</strong>: May 2023 - Aug 2023</li>
                             <li><strong>Location</strong>: Santa Clara, CA</li>
                             <li><strong>Company Website</strong>:
                                 <a href="https://www.ti.com/" target="_blank">ti.com</a></li>
                         </ul>
                     </div>
-                    <div class="portfolio-description">
+                    <div class="">
+                        <hr>
                         <h2>Texas Instruments</h2>
                         <p>
-                        <ul>
-                        <li>Incoming Intern at Texas Instruments</li>
-                            <li>Working on chipsets to transfer multiple 4k camera streams on cars to centralized
-                                computers on cars</li>
-                        </ul>
+                            Worked with on the automotive SerDes product line (FPD-Link) to help create automation
+                            scripts in python. Developed an automated validation system to simulate different
+                            cables and parameters. Created correlations to help map different cable types and parameters
+                            of one cable to another cable to reduce the number of cables needed to be tested. The
+                            automated system helped to reduce cable testing times by over 50%.
                         </p>
                     </div>
                 </div>
-
             </div>
+            <div class="portfolio-description w-100">
+                <h3>FPD-Link</h3>
+                <p>
+                    FPD-Link is a high-speed digital interface for video data transmission and is used in
+                    automotive infotainment and ADAS applications. It is a low-cost, low-power, and low EMI
+                    technology that is easy to implement. FPD-Link is a point-to-point technology that can
+                    support both uni-directional and bidirectional data transmission. It is a robust
+                    technology that can support long distance transmission over a single twisted pair cable.
+                    FPD-Link is a scalable technology that can support different resolutions and frame rates
+                    by changing the serializer and deserializer configurations.
+                </p>
 
+                <h3>Role</h3>
+                <p>
+                    As a member of the validation team I worked on validation of features of the FPD-Link. My
+                    role in particular entailed working with the validation team to develop test plans and
+                    create an automated testing system to test a variety of different features. As a validation
+                    engineer we are considered the first client which entails what we work with doesn't always work,
+                    and we must test it similar to how our customers will.
+                </p>
+                <h3>Project</h3>
+                <p>
+                    My project involved creating an automated system to validate cable parameters. The system
+                    utilizing an ISI box to replicate the insertion loss of a
+                    cable. With newer technologies coming to play the role of return loss is playing a larger role in
+                    the overall system. Therefore, my task was to emulate a variety different insertion loss values
+                    while holding return loss at a constant value to ensure the system is not affected by the return
+                    loss parameter.
+                </p>
+                <h3>Process</h3>
+                <p>
+                    The following process was utilized to validate the setup. First, a plan was outlined highlighting
+                    the main hypothesis that an ISI box can be used to simulate the
+                    insertion loss for a cable while utilizing different cable to vary the return loss. Next, a test
+                    plan was created to first gather the s-params(insertion and return loss) for different STP and
+                    coaxial cable lengths. Once the s-params were calculated, the ISI box was automated and used to
+                    create a relation between the real loss and ISI box. After the correlation is created it is
+                    validated through a variety of tests ensuring link integrity.
+                </p>
+                <b>
+                    The following is a video explaining the product line I worked for at Texas Instruments.
+                </b>
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen frameborder="0"
+                        height="315" src="https://www.youtube.com/embed/HNtmXPo8dbw"
+                        title="YouTube video player"
+                        width="560"></iframe>
+            </div>
         </div>
     </section><!-- End Portfolio Details Section -->
 
