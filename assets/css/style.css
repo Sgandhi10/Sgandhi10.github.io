@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
     #main {
-        margin-left: 100px;
+        margin-left: 10px;
     }
 }
 
@@ -670,7 +670,6 @@ skills-hardware:hover {
 }
 
 .portfolio #portfolio-flters {
-    padding: 0;
     margin: 0 auto 25px auto;
     list-style: none;
     text-align: center;
@@ -710,7 +709,7 @@ skills-hardware:hover {
 
 .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.90);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -768,13 +767,14 @@ skills-hardware:hover {
 .portfolio .portfolio-wrap .portfolio-info h4 {
     font-size: 20px;
     color: #45505b;
-    font-weight: 600;
+    font-weight: 650;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
     color: #45505b;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
+    font-weight: 550;
     padding: 0;
     margin: 0;
 }
@@ -871,6 +871,8 @@ skills-hardware:hover {
 
 .portfolio-details .portfolio-description {
     padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1297,4 +1299,31 @@ skills-hardware:hover {
 
 #footer .credits {
     font-size: 13px;
+}
+
+.bx-devpost {
+    background: url('/assets/img/devpost.png');
+    height: 20px;
+    width: 20px;
+    display: block;
+    /* Other styles here */
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bi::before {
+    display: inline-block;
+    content: "";
+    vertical-align: -.125em;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
 }
