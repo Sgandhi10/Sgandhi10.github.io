@@ -43,13 +43,10 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section class="portfolio-details" id="portfolio-details">
         <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-8">
+            <div class="row gy-4 justify-content-center align-items-center">
+                <div class="col-lg-6">
                     <div class="portfolio-details-slider swiper">
                         <div class="swiper-wrapper align-items-center">
-
                             <div class="swiper-slide">
                                 <img alt="" src="../assets/img/portfolio/Insignex/irrigation%20system.jfif">
                             </div>
@@ -61,7 +58,6 @@
                             <div class="swiper-slide">
                                 <img alt="" src="../assets/img/portfolio/Insignex/smart_farming_block_diagram.png">
                             </div>
-
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -69,33 +65,70 @@
 
                 <div class="col-lg-4">
                     <div class="portfolio-info">
-                        <h3>Project information</h3>
+                        <h3>Internship information</h3>
                         <ul>
-                            <li><strong>Category</strong>: Internship</li>
-                            <li><strong>Position</strong>: Intern</li>
-                            <li><strong>Internship date</strong>: May 2020 - June 2021</li>
-                            <li><strong>Publication</strong>: <a href="https://doi.org/10.1007/978-981-16-2123-9_31" target="_blank"
+                            <li><strong>Position</strong>: Research Intern</li>
+                            <li><strong>Internship date</strong>: June 2020 - May 2021</li>
+                            <li><strong>Location</strong>: Gujarat, India</li>
+                            <li><strong>Company Website</strong>:
+                                <a href="https://www.insignex.com/" target="_blank">insignex.com</a></li>
+                            <li><strong>Publication</strong>: <a href="https://doi.org/10.1007/978-981-16-2123-9_31"
+                                                                 target="_blank"
                             >Paper</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="portfolio-description">
+                    <div class="">
+                        <hr>
                         <h2>InSignEx</h2>
                         <p>
-                        <ul>
-                        <li>Developed an automated irrigation system for banana farmers to collect/evaluate data
-                            using Python, Flask, and MySQL</li>
-                        <li>Prototyped designs and measured power draw of a NodeMCU with a shunt resistor to reduce
-                            power consumption to 30mA</li>
-                        <li>Created a proof-of-concept for the user interface utilizing Adobe XD, modeling data
-                                 using historical information from the region about the climate, soil, and
-                            irrigation system</li>
-
-                    </ul>
+                            Developed an automated irrigation system for banana farmers to collect and evaluate data
+                            using Python, Flask, and MySQL. Prototyped designs and measured power draw of a
+                            NodeMCU with a shunt resistor to reduce power consumption to 30mA. Created a
+                            proof-of-concept for the user interface in Adobe XD, modeling data using
+                            historical information from the region about the climate, soil, and irrigation system
                         </p>
                     </div>
                 </div>
-
+            </div>
+            <div class="portfolio-description w-100">
+                <h3>NodeMCU</h3>
+                <p>
+                    For this project my work was heavily focused on the NodeMCU. The NodeMCU is a low power
+                    microcontroller that is also affordable and easy to use. During my internship, I learned about
+                    shunt resistors and different measuring techniques to measure current draw in the mili/micro amp
+                    range using regular multimeter's. This process involved utilizing datasheets to understand the
+                    capabilities at a chip level and then using that information to turn of certain components of the
+                    integrated chip to save power for longer battery life. Furthermore, my work involved using
+                    external clocks to wake up the microcontroller from deep sleep mode to relay information
+                    periodically back to a central computer over WiFi.
+                </p>
+                <h3>Server</h3>
+                <p>
+                    After the data was collected from the NodeMCU through the different sensors the data was relayed
+                    back to the central server. The server was a Raspberry Pi 4 that was running a Flask server and
+                    compiling the data in a MySql database. This allowed for easy access at a later time for
+                    visualizations and analysis.
+                </p>
+                <h3>Paper</h3>
+                <p>
+                    All of the findings from the project were compiled into a paper that was published in the IEEE
+                    conference on Intelligent Systems and Control (ISCO) 2021. The paper can be found at the link
+                    provided above. Below is the abstract to provide a bit of information on the paper.
+                    <br>
+                    <br>
+                    <I> Abstract:</I> The growth and production of fruits from crops are influenced by many factors.
+                    Light,
+                    temperature, nutrients, and water are the four major factors that influence the crop’s growth
+                    (Environmental factors affecting plant growth, [1]). The main factor left to be controlled is water
+                    and nutrients. An array of electroconductive sensors is used to figure out the soil moisture
+                    throughout the farm. Each moisture sensor is paired with a stem diameter sensor to measure plant
+                    health and growth. This pair of sensors is used to measure the growth of crops over time. This
+                    allows for continuous monitoring of the crops to help the farmer understand how the crops are
+                    progressing. Continuous monitoring and history of information provided by these sensors help the
+                    farmer make changes to the watering schedule and nutrients in the soil to ensure optimal crop
+                    growth.
+                </p>
             </div>
 
         </div>
